@@ -66,3 +66,5 @@ if __name__ == '__main__':
             main("example.log", 1, "fred")
     except TimeoutError:
         sys.stdout.write('timeout\n')
+    except IOError:
+        sys.stdout.write('file missing\n')
